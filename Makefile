@@ -1,3 +1,6 @@
+s:
+	node_modules/.bin/coffee index.coffee
+
 commit:
 	git add .
 	git commit -a -m 'deploying...'
