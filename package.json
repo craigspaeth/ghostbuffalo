@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "express": "3.x",
+    "jade": "*",
     "coffee-script": "*"
   },
   "devDependencies": {
     "stylus": "*",
-    "jade": "*",
     "nib": "*"
   }
 }
