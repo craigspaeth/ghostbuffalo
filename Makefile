@@ -1,5 +1,10 @@
+BIN = node_modules/.bin
+
 s:
-	node_modules/.bin/coffee index.coffee
+	$(BIN)/coffee index.coffee
+
+assets:
+	$(BIN)/stylus stylesheets/index.styl -o public/
 
 commit:
 	git add .
