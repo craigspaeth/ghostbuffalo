@@ -12,8 +12,6 @@ if "development" is NODE_ENV
   app.use require("stylus").middleware
     src: __dirname + '/stylesheets'
     dest: __dirname + '/public'
-if "production" is NODE_ENV
-  app.get '/fonts/cracked.woff', (req, res) -> res.send 404
 app.use express.static __dirname + '/public'
 
 # Routes
