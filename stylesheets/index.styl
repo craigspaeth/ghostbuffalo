@@ -1,2 +1,50 @@
-body
-  color red
+@import '../node_modules/nib'
+
+global-reset()
+
+*
+  box-sizing border-box
+
+html, body
+  height 100%
+
+#layout-container
+  background url('images/bg.jpg')
+  background-size cover
+  min-height 100%
+
+#index-title img
+  width 50%
+  margin 30px
+
+#ghost-buffalo
+  position absolute
+  top 20px
+  right 20px
+  height 90%
+
+.wood-button
+  background url('images/button.png') no-repeat center center
+  background-size contain
+  width 300px
+  display block
+  font-size 80px
+  font-family Cracked, Courier, serif
+  height 100px
+  text-align center
+  margin-bottom 20px
+  padding 10px 0
+  cursor pointer
+
+#index-buttons
+  margin-left 30px
+  .wood-button:nth-child(2)
+    margin-left 10%
+  .wood-button:nth-child(3)
+    margin-left 20%
+
+.wood-button-small-text
+  font-size 52px
+  line-height 0.7em
+  padding-top 13px
+  letter-spacing 6px
