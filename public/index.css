@@ -107,7 +107,7 @@ body {
 }
 #index-title img {
   width: 50%;
-  margin: 30px;
+  margin: 30px 0 60px 30px;
 }
 #ghost-buffalo {
   position: absolute;
@@ -126,7 +126,7 @@ body {
   font-family: Cracked, Courier, serif;
   height: 100px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px 0;
   cursor: pointer;
 }
