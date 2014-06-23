@@ -111,8 +111,15 @@ a {
   min-height: 100%;
 }
 #index-title img {
-  width: 50%;
-  margin: 30px 0 60px 30px;
+  width: 40%;
+  margin: 30px;
+}
+#index-footer {
+  margin: 30px;
+  font-size: 18px;
+}
+#index-footer a {
+  border-bottom: 2px solid #000;
 }
 #ghost-buffalo {
   position: absolute;
@@ -127,7 +134,7 @@ a {
   background-size: contain;
   width: 250px;
   display: block;
-  font-size: 70px;
+  font-size: 60px;
   font-family: Cracked, Courier, serif;
   height: 80px;
   text-align: center;
@@ -156,14 +163,16 @@ a {
   width: 100%;
   position: absolute;
   padding: 20px;
+  padding-bottom: 40px;
+}
+#cartoons-image-container small {
+  font-size: 18px;
+  margin: 5px 0 20px 0;
+  display: block;
+  text-align: left;
 }
 #cartoons-image {
-  background: top center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  height: 80%;
-  margin-bottom: 20px;
+  width: 100%;
 }
 #cartoons-image-link {
   font-weight: bold;
