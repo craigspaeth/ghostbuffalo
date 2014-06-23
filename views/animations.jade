@@ -1,0 +1,15 @@
+extends layout
+
+block locals
+  - sidebar = true
+
+block body
+  .sidebar-padding
+    ul#animations
+      for id in ['eRXUhhFMCco', 'bSzUDqkBKqY']
+        li
+          iframe(
+            width="560" height="315"
+            src="//www.youtube.com/embed/" + id
+            frameborder="0" allowfullscreen
+          )

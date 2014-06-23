@@ -20,6 +20,8 @@ app.get '/', (req, res) ->
 app.get '/cartoons', (req, res) ->
   fs.readdir __dirname + '/public/cartoons', (err, files) ->
     res.render 'cartoons', source: _.sample files
+app.get '/animations', (req, res) ->
+  res.render 'animations'
 
 # Listen
 app.listen PORT, ->
