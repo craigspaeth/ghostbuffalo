@@ -105,22 +105,22 @@ a {
 }
 #layout-container {
   background: url("images/bg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
   min-height: 100%;
 }
 #index-title img {
   width: 40%;
   margin: 30px;
 }
-#index-footer {
+#layout-footer {
   margin: 30px;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0;
 }
-#index-footer a {
+#layout-footer a {
   border-bottom: 2px solid #000;
 }
 #ghost-buffalo {
@@ -174,7 +174,11 @@ a {
   text-align: left;
 }
 #cartoons-image {
-  width: 100%;
+  max-width: 100%;
+  max-height: 80%;
+}
+#cartoons-image-link-container {
+  display: inline-block;
 }
 #cartoons-image-link {
   font-weight: bold;
@@ -238,4 +242,8 @@ a {
 #interactive-cartoons li {
   top: 50%;
   position: relative;
+}
+#interactive-cartoons-caption {
+  font-size: 18px;
+  margin-top: 10px;
 }

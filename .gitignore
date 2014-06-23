@@ -26,3 +26,4 @@ node_modules
 
 # Other
 public/_cartoons
+.DS_Store
