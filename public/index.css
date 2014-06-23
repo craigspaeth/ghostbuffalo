@@ -201,7 +201,7 @@ a {
   width: 100%;
 }
 .sidebar-padding {
-  padding-left: 180px;
+  padding-left: 180px !important;
 }
 #animations {
   background: #dffffe;
