@@ -7,6 +7,11 @@ global-reset()
 
 html, body
   height 100%
+  font-family Cracked, Courier, serif
+
+a
+  color black
+  text-decoration none
 
 #layout-container
   background url('images/bg.jpg')
@@ -26,14 +31,14 @@ html, body
 .wood-button
   background url('images/button.png') no-repeat center center
   background-size contain
-  width 300px
+  width 250px
   display block
-  font-size 80px
+  font-size 70px
   font-family Cracked, Courier, serif
-  height 100px
+  height 80px
   text-align center
   margin-bottom 10px
-  padding 10px 0
+  padding 5px 0
   cursor pointer
 
 #index-buttons
@@ -44,7 +49,51 @@ html, body
     margin-left 20%
 
 .wood-button-small-text
-  font-size 52px
+  font-size 42px
   line-height 0.7em
   padding-top 13px
   letter-spacing 6px
+
+#cartoons-image-container
+  text-align center
+  height 100%
+  width 100%
+  position absolute
+  padding 20px
+
+#cartoons-image
+  background center center no-repeat
+  background-size contain
+  height 80%
+  margin-bottom 20px
+
+#cartoons-image-link
+  font-weight bold
+  font-size 42px
+
+#sidebar
+  width 130px
+  position fixed
+  top 20px
+  left 20px
+  z-index 2
+  a, img
+    max-width 100%
+  .wood-button
+    height 60px
+    width 170px
+    font-size 36px
+    padding 10px 0
+  .wood-button-small-text
+    font-size 22px
+    padding 15px 0
+    letter-spacing 3px
+  a:first-child
+    margin-bottom 10px
+    width 170px
+    display block
+    img
+      width 100%
+
+#sidebar + #layout-container #cartoons-image-container
+  padding-left 180px
