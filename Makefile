@@ -4,7 +4,7 @@ s:
 	$(BIN)/coffee index.coffee
 
 assets:
-	$(BIN)/stylus stylesheets/index.styl -o public/ --inline --include public/
+	$(BIN)/stylus stylesheets/index.styl -o public/
 
 commit: assets
 	git add .
