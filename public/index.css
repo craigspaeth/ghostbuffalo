@@ -213,3 +213,6 @@ a {
   display: inline-block;
   padding: 50px 0;
 }
+#animations li:first-child {
+  padding-top: 20px;
+}
