@@ -121,7 +121,7 @@ a {
 #layout-footer {
   margin: 30px;
   font-size: 16px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 #layout-footer a {

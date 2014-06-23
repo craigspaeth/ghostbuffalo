@@ -4,9 +4,9 @@ s:
 	$(BIN)/coffee index.coffee
 
 assets:
-	$(BIN)/stylus stylesheets/index.styl -o public/
+	$(BIN)/stylus stylesheets/index.styl -o public/ --inline --include public/
 
-commit:
+commit: assets
 	git add .
 	git commit -a -m 'deploying...'
 	git push git@github.com:craigspaeth/ghostbuffalo.git master
