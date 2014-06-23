@@ -1,0 +1,10 @@
+extends layout
+
+block locals
+  - sidebar = true
+
+block body
+  .sidebar-padding
+    ul#interactive-cartoons
+      li( style="margin-top: -202px" )
+        include dinogame.html

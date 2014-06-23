@@ -22,6 +22,8 @@ app.get '/cartoons', (req, res) ->
     res.render 'cartoons', source: _.sample files
 app.get '/animations', (req, res) ->
   res.render 'animations'
+app.get '/interactive-cartoons', (req, res) ->
+  res.render 'interactive-cartoons'
 
 # Listen
 app.listen PORT, ->
