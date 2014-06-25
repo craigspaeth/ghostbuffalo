@@ -1,12 +1,14 @@
 BIN = node_modules/.bin
 
 s:
+	find . -name '*.DS_Store' -type f -delete
 	$(BIN)/coffee index.coffee
 
 assets:
 	$(BIN)/stylus stylesheets/index.styl -o public/
 
 commit: assets
+	find . -name '*.DS_Store' -type f -delete
 	git add .
 	git commit -a -m 'deploying...'
 	git push git@github.com:craigspaeth/ghostbuffalo.git master
@@ -16,6 +18,4 @@ deploy: commit
 	open http://ghostbuffalo.com/
 
 compress:
-	$(foreach file, $(shell find public/_cartoons -name '*.jpg' | cut -d '.' -f 1 | cut -d '/' -f 3), \
-		convert -strip -interlace Plane -quality 80% public/_cartoons/$(file).jpg public/cartoons/$(file).jpg \
-	)
+	$(BIN)/imageOptim --directory public/cartoons

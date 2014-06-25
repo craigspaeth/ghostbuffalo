@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "stylus": "*",
-    "nib": "*"
+    "nib": "*",
+    "imageoptim-cli": "*"
   }
 }
