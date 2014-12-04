@@ -13,9 +13,12 @@ html( lang="en" )
           img( src='/images/title.png' alt='Ghost Buffalo' )
         include buttons
     #layout-container
+      #layout-bg
       block body
     footer#layout-footer
       | Weird things by Matt Russell, internet magic by Craig Spaeth
       br
       | Copyright © #{new Date().getFullYear()} Matt Russell. All rights reserved.
-    include ga.html
+    script( src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" )
+    script( src="index.js" )
+    include statcounter.html

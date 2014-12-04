@@ -5,8 +5,16 @@ block locals
 
 block body
   #cartoons-image-container.sidebar-padding
-    a#cartoons-image-link-container( href='')
+    h1 Random Cartoon
+    a.cartoons-image-link-container( href='')
       img#cartoons-image( src="/cartoons/#{source}" )
       small Click for another image
     br
-    a#cartoons-image-link( href='http://butsneeriouslyguys.tumblr.com/' target="_blank"  ) See all cartoons
+    h1 Latest Cartoon
+    a.cartoons-image-link-container( href='')
+      img#cartoons-image( src="/cartoons/wizard prison.png" )
+      small Click for another image
+    br
+    a#cartoons-image-link(
+      href='http://butsneeriouslyguys.tumblr.com/' target="_blank"
+    ) See all cartoons
