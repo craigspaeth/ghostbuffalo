@@ -6,7 +6,10 @@
     "node": "8.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "compress": "imageOptim --directory public/cartoons",
+    "assets": "stylus stylesheets/index.styl -o public/",
+    "deploy": "git push --force https://git.heroku.com/ghostbuffalo.git"
   },
   "dependencies": {
     "decaffeinate": "^2.56.32",
