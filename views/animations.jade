@@ -2,14 +2,26 @@ extends layout
 
 block locals
   - sidebar = true
+  -
+    videos = [
+      { id: '221209603', platform: 'vimeo' },
+      { id: 'eRXUhhFMCco', platform: 'youtube' },
+      { id: 'bSzUDqkBKqY', platform: 'youtube' },
+      { id: 'BH0f8DAA1LU', platform: 'youtube' }
+    ]
 
 block body
   .sidebar-padding
     ul#animations
-      for id in ['eRXUhhFMCco', 'bSzUDqkBKqY', 'BH0f8DAA1LU']
+      for video in videos
         li
           iframe(
             width="560" height="315"
-            src="//www.youtube.com/embed/" + id
+            src=(
+              video.platform == 'youtube'
+              ? "//www.youtube.com/embed/" + video.id
+              : 'https://player.vimeo.com/video/' + video.id
+            )
             frameborder="0" allowfullscreen
           )
+          
