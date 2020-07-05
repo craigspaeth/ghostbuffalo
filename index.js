@@ -27,6 +27,8 @@ app.get('/cartoons', (req, res) =>
 app.get('/animations', (req, res) => res.render('animations'))
 app.get('/interactive-cartoons', (req, res) =>
   res.render('interactive-cartoons'))
+app.get('/stuffbrawl', (req, res) =>
+  res.render('stuffbrawl'))
 
 // Listen
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))
