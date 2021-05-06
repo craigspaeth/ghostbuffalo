@@ -18,7 +18,7 @@
     "jade": "^1.11.0",
     "prettier": "^1.5.2",
     "prettier-standard-formatter": "^0.222222222222222.333333333333333",
-    "underscore": "^1.8.3"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "imageoptim-cli": "^1.15.1",
