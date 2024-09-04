@@ -7,22 +7,19 @@
   },
   "scripts": {
     "start": "node index.js",
-    "compress": "imageOptim --directory public/cartoons",
-    "assets": "stylus stylesheets/index.styl -o public/",
-    "deploy": "git push --force https://git.heroku.com/ghostbuffalo.git"
+    "prebuild": "npm run compress && npm run assets",
+    "compress": "imageOptim public/cartoons",
+    "assets": "stylus stylesheets/index.styl -o public/"
   },
   "dependencies": {
-    "decaffeinate": "^2.56.32",
-    "express": "^3.21.2",
-    "global": "^4.3.2",
+    "express": "^4.19.2",
     "jade": "^1.11.0",
-    "prettier": "^1.5.2",
-    "prettier-standard-formatter": "^0.222222222222222.333333333333333",
-    "underscore": "^1.8.3"
+    "prettier": "^3.3.3",
+    "underscore": "^1.13.7"
   },
   "devDependencies": {
-    "imageoptim-cli": "^1.15.1",
-    "nib": "^1.1.2",
-    "stylus": "^0.54.5"
+    "imageoptim-cli": "^3.1.9",
+    "nib": "^1.2.0",
+    "stylus": "^0.63.0"
   }
 }

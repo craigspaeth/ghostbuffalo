@@ -112,8 +112,6 @@ a {
 }
 #layout-bg {
   background: url("images/bg.jpg");
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
   background-size: auto 100%;
   position: fixed;
   z-index: -1;
@@ -152,8 +150,6 @@ a {
 }
 .wood-button {
   background: url("images/button.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
   background-size: contain;
   width: 250px;
   display: block;
